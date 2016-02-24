@@ -54,11 +54,11 @@ $max-width: 1180px !default;
 /// @prop {String} keys - Keys are identifiers mapped to a given length
 /// @prop {Map} values - Values are actual breakpoints expressed in pixels
 /// @see {mixin} respond-to
-$breakpoints: (
-  'small': (min-width: 320px),
-  'medium': (min-width: 768px),
-  'large': (min-width: 1024px),
-) !default;
+// $breakpoints: (
+//   'small': (min-width: 320px),
+//   'medium': (min-width: 768px),
+//   'large': (min-width: 1024px),
+// ) !default;
 
 
 
@@ -70,3 +70,12 @@ $breakpoints: (
 /// @example scss - When using a CDN
 ///   $base-url: 'http://cdn.example.com/assets/';
 $base-url: '/assets/' !default;
+//neat
+$mobile: new-breakpoint(max-width 500px 4);
+
+
+//our variables
+$body-gray: #F5F5F5;
+$body-color: $body-gray;
+$white: #FFFFFF;
+$container-color: $white;

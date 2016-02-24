@@ -1,3 +1,9 @@
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
 /**
  * Set up a decent box model on the root element
  */
@@ -12,6 +18,12 @@ html {
  */
 *, *::before, *::after {
   box-sizing: inherit; }
+
+body {
+  background-color: #F5F5F5; }
+
+.container {
+  background-color: #FFFFFF; }
 
 /**
  * Basic styles for links
@@ -38,7 +50,7 @@ body {
  * 3. Leave some space on the edges, especially valuable on small screens
  */
 .container {
-  max-width: 1180px;
+  max-width: 68em;
   /* 1 */
   margin-left: auto;
   /* 2 */
@@ -78,9 +90,43 @@ body {
   position: absolute;
   width: 1px; }
 
-h1 {
+body h1 {
   font-size: 20px;
-  color: blue;
+  color: purple;
   font-weight: bold; }
+
+header ul li {
+  position: static;
+  display: inline;
+  padding: 10px;
+  float: left; }
+
+nav {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  nav::after {
+    clear: both;
+    content: "";
+    display: table; }
+  nav li.block {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%; }
+    nav li.block:last-child {
+      margin-right: 0; }
+    nav li.block:nth-child(4n) {
+      margin-right: 0; }
+    nav li.block:nth-child(4n+1) {
+      clear: left; }
+    @media screen and (max-width: 570px) {
+      nav li.block {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%; }
+        nav li.block:last-child {
+          margin-right: 0; } }
 
 /*# sourceMappingURL=main.css.map */

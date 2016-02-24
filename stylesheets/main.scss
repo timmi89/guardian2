@@ -2,10 +2,10 @@
 
 @import
  "../bourbon/bourbon";
+ @import
+ "../neat/neat";
 // 1. Configuration and helpers
 @import
-
-
   'utils/mixins',
   'utils/functions',
   'utils/variables';
