@@ -1,0 +1,25 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+body h1  {
+  font-size: 20px;
+  color: purple;
+  font-weight: bold;
+  @include media($mobile) {
+  }
+}
+header ul {
+  padding:0;
+  li {
+    color: $white;
+  // position: static;
+  font-size: .8em;
+  display: inline;
+  padding: 5px;
+  float: left;
+  }
+  a {
+    color: $white;
+    text-decoration: none;
+  }
+}

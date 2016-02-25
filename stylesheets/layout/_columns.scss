@@ -1,0 +1,119 @@
+
+// .jobs li a{
+//   text-align: right;
+// }
+nav {
+  height: 100px;
+  padding-left: 10px;
+}
+
+.headLines, .highLights, .world, .country {
+  @include outer-container;
+  margin-right: 15px;
+
+
+     h1{
+       height: 600px;
+    @include span-columns(2);
+    @include media(max-width 700px) {
+       @include span-columns(12);
+    }
+  }
+
+  .story1{
+    @extend %jesusbox;
+    @include span-columns(7);
+    img {
+      float: right;
+    }
+
+    @include media(max-width 700px) {
+       @include span-columns(12);
+       height: 170px;
+      p{
+        @include span-columns(12);
+        }
+      }
+  }
+  .story2{
+    @extend %jesusbox;
+    @include span-columns(2.7);
+    @include media(max-width 700px) {
+      height: 170px;
+       @include span-columns(12);
+    }
+  }
+  .story3{
+    @extend %jesusbox;
+    img {
+      width: 80%;
+      height: auto;
+    }
+    @include span-columns(4);
+    // @include shift(2);
+    @include media(max-width 700px) {
+      height: 170px;
+        @include span-columns(12);
+        @include shift(0);
+        img {
+          width: 40%;
+          height: auto;
+        }
+    }
+  }
+  .story4, .story5, .story6, .story7 {
+    // float: right;
+    @extend %jesusbox2;
+    @include span-columns(2.85);
+    // @include omega(2);
+    @include media(max-width 700px) {
+      height: 170px;
+       @include span-columns(12);
+    }
+  }
+}
+
+.highLights {
+  .story4, .story5, .story6, .story7  {
+    @include omega(2);
+  }
+}
+
+.highLights, .story1 {
+  img {
+    height: 80%;
+    width: auto;
+  }
+}
+
+
+.country {
+  float: left;
+  @include outer-container;
+  h1{
+    @include span-columns(2);
+    color: red;
+  }
+
+  .row1 {
+
+    @include outer-container;
+    .story1{
+      @include span-columns(6);
+    }
+    .story2{
+      @include span-columns(3);
+    }
+  }
+
+  .row2 {
+
+    @include outer-container;
+    .story3{
+      @include span-columns(3);
+    }
+    .story4, .story5, .story6, .story7,{
+      @include span-columns(1.5);
+    }
+  }
+}

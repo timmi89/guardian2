@@ -1,0 +1,60 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+/// Event wrapper
+/// @author Harry Roberts
+/// @param {Bool} $self [false] - Whether or not to include current selector
+/// @link https://twitter.com/csswizardry/status/478938530342006784 Original tweet from Harry Roberts
+@mixin on-event($self: false) {
+  @if $self {
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  } @else {
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  }
+}
+
+/// Make a context based selector a little more friendly
+/// @author Hugo Giraudel
+/// @param {String} $context
+@mixin when-inside($context) {
+  #{$context} & {
+    @content;
+  }
+}
+
+//EXTEND FOR TABLE COLUMNS
+
+%jesusbox {
+  padding: 10px;
+  font-size: .8em;
+  margin-top: 10px;
+  overflow: hidden;
+  background-color: $body-color;
+  border-top: 1px solid lightblue;
+  height: 300px;
+  &:hover {
+    background-color: darken($body-color, 10%);
+  }
+}
+%jesusbox2 {
+  padding: 10px;
+  font-size: .8em;
+  margin-top: 10px;
+  overflow: hidden;
+  background-color: $body-color;
+  border-top: 1px solid lightblue;
+  height: 145px;
+  &:hover {
+    background-color: darken($body-color, 10%);
+  }
+}
