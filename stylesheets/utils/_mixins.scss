@@ -36,9 +36,10 @@
 
 %jesusbox {
   padding: 10px;
+  font-size: .8em;
   margin-top: 10px;
   overflow: hidden;
   background-color: $body-color;
   border-top: 1px solid lightblue;
-  max-height: 400px;
+  height: 300px;
 }

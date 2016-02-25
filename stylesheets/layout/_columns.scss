@@ -1,14 +1,10 @@
 
-
+// .jobs li a{
+//   text-align: right;
+// }
 nav {
-  @include outer-container;
-  li.block {
-    @include span-columns(3);
-    @include omega(4n);
-    @include media(max-width 570px) {
-       @include span-columns(12);
-    }
-  }
+  height: 100px;
+  padding-left: 10px;
 }
 
 .headLines {
@@ -25,32 +21,25 @@ nav {
   .story1{
     @extend %jesusbox;
     @include span-columns(7.5);
-     p{
-      @include span-columns(3);
-      float: left;
-
-
-
-    }
     img {
-      @include span-columns(4);
-      display: inline-block;
-      width: 40%;
-      height: auto;
-      float:right;
+      float: right;
     }
+
     @include media(max-width 700px) {
        @include span-columns(12);
-      }
+       height: 170px;
       p{
         @include span-columns(12);
         }
+      }
   }
   .story2{
     @extend %jesusbox;
     @include span-columns(2.1);
     @include media(max-width 700px) {
+      height: 170px;
        @include span-columns(12);
+
     }
   }
   .story3{
@@ -62,14 +51,20 @@ nav {
     @include span-columns(4);
     @include shift(2);
     @include media(max-width 700px) {
+      height: 170px;
         @include span-columns(12);
         @include shift(0);
+        img {
+          width: 40%;
+          height: auto;
+        }
     }
   }
   .story4{
     @extend %jesusbox;
     @include span-columns(3);
     @include media(max-width 700px) {
+      height: 170px;
        @include span-columns(12);
     }
   }
@@ -77,6 +72,7 @@ nav {
     @extend %jesusbox;
     @include span-columns(3);
     @include media(max-width 700px) {
+      height: 170px;
        @include span-columns(12);
     }
   }
