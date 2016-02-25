@@ -9,21 +9,11 @@ body h1  {
   }
 }
 header ul {
+  padding:0;
   li {
-  position: static;
+  // position: static;
   display: inline;
   padding: 10px;
   float: left;
-  }
-}
-
-nav {
-  @include outer-container;
-  li.block {
-    @include span-columns(3);
-    @include omega(4n);
-    @include media(max-width 570px) {
-       @include span-columns(12);
-    }
   }
 }

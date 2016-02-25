@@ -6,9 +6,10 @@
  "../neat/neat";
 // 1. Configuration and helpers
 @import
+  'utils/variables',
   'utils/mixins',
-  'utils/functions',
-  'utils/variables';
+  'utils/functions';
+
 
 // 2. Vendors
 // @import
@@ -23,6 +24,8 @@
 
 // 4. Layout-related sections
 @import
+  'layout/container',
+  'layout/columns',
   'layout/header',
   'layout/footer';
 

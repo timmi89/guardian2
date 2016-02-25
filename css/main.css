@@ -4,6 +4,14 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
+.headLines .story1, .headLines .story2, .headLines .story3, .headLines .story4, .headLines .story5 {
+  padding: 10px;
+  margin-top: 10px;
+  overflow: hidden;
+  background-color: #F5F5F5;
+  border-top: 1px solid lightblue;
+  max-height: 400px; }
+
 /**
  * Set up a decent box model on the root element
  */
@@ -21,9 +29,19 @@ html {
 
 body {
   background-color: #F5F5F5; }
+  body .box {
+    display: block;
+    background-color: red;
+    width: 100%;
+    height: 300px; }
 
 .container {
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+  padding: 15px; }
+
+.header-color {
+  background-color: #005689;
+  width: 100%; }
 
 /**
  * Basic styles for links
@@ -35,9 +53,6 @@ body {
   color: #222222;
   font: normal 125%/1.4 "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
 
-/**
- * Clear inner floats
- */
 .clearfix::after {
   clear: both;
   content: '';
@@ -90,16 +105,9 @@ body {
   position: absolute;
   width: 1px; }
 
-body h1 {
-  font-size: 20px;
-  color: purple;
-  font-weight: bold; }
-
-header ul li {
-  position: static;
-  display: inline;
-  padding: 10px;
-  float: left; }
+.container {
+  max-width: 1200px;
+  padding: 0 !important; }
 
 nav {
   max-width: 68em;
@@ -128,5 +136,148 @@ nav {
         width: 100%; }
         nav li.block:last-child {
           margin-right: 0; } }
+
+.headLines {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-right: 15px; }
+  .headLines::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .headLines h1 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%; }
+    .headLines h1:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 700px) {
+      .headLines h1 {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%; }
+        .headLines h1:last-child {
+          margin-right: 0; } }
+  .headLines .story1 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 61.61588%; }
+    .headLines .story1:last-child {
+      margin-right: 0; }
+    .headLines .story1 p {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 23.23176%;
+      float: left; }
+      .headLines .story1 p:last-child {
+        margin-right: 0; }
+    .headLines .story1 img {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%;
+      display: inline-block;
+      width: 40%;
+      height: auto;
+      float: right; }
+      .headLines .story1 img:last-child {
+        margin-right: 0; }
+    @media screen and (max-width: 700px) {
+      .headLines .story1 {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%; }
+        .headLines .story1:last-child {
+          margin-right: 0; } }
+    .headLines .story1 p {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      .headLines .story1 p:last-child {
+        margin-right: 0; }
+  .headLines .story2 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 15.55494%; }
+    .headLines .story2:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 700px) {
+      .headLines .story2 {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%; }
+        .headLines .story2:last-child {
+          margin-right: 0; } }
+  .headLines .story3 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    margin-left: 17.05961%; }
+    .headLines .story3 img {
+      width: 80%;
+      height: auto; }
+    .headLines .story3:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 700px) {
+      .headLines .story3 {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%;
+        margin-left: 0%; }
+        .headLines .story3:last-child {
+          margin-right: 0; } }
+  .headLines .story4 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%; }
+    .headLines .story4:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 700px) {
+      .headLines .story4 {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%; }
+        .headLines .story4:last-child {
+          margin-right: 0; } }
+  .headLines .story5 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%; }
+    .headLines .story5:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 700px) {
+      .headLines .story5 {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%; }
+        .headLines .story5:last-child {
+          margin-right: 0; } }
+
+body h1 {
+  font-size: 20px;
+  color: purple;
+  font-weight: bold; }
+
+header ul {
+  padding: 0; }
+  header ul li {
+    display: inline;
+    padding: 10px;
+    float: left; }
 
 /*# sourceMappingURL=main.css.map */

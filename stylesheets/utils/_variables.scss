@@ -50,21 +50,6 @@ $max-width: 1180px !default;
 
 
 
-/// Breakpoints map
-/// @prop {String} keys - Keys are identifiers mapped to a given length
-/// @prop {Map} values - Values are actual breakpoints expressed in pixels
-/// @see {mixin} respond-to
-// $breakpoints: (
-//   'small': (min-width: 320px),
-//   'medium': (min-width: 768px),
-//   'large': (min-width: 1024px),
-// ) !default;
-
-
-
-
-
-
 /// Relative or absolute URL where all assets are served from
 /// @type String
 /// @example scss - When using a CDN
@@ -79,3 +64,5 @@ $body-gray: #F5F5F5;
 $body-color: $body-gray;
 $white: #FFFFFF;
 $container-color: $white;
+$header-blue: #005689;
+$header-color: $header-blue;

@@ -1,0 +1,83 @@
+
+
+nav {
+  @include outer-container;
+  li.block {
+    @include span-columns(3);
+    @include omega(4n);
+    @include media(max-width 570px) {
+       @include span-columns(12);
+    }
+  }
+}
+
+.headLines {
+  @include outer-container;
+  margin-right: 15px;
+
+
+     h1{
+    @include span-columns(2);
+    @include media(max-width 700px) {
+       @include span-columns(12);
+    }
+  }
+  .story1{
+    @extend %jesusbox;
+    @include span-columns(7.5);
+     p{
+      @include span-columns(3);
+      float: left;
+
+
+
+    }
+    img {
+      @include span-columns(4);
+      display: inline-block;
+      width: 40%;
+      height: auto;
+      float:right;
+    }
+    @include media(max-width 700px) {
+       @include span-columns(12);
+      }
+      p{
+        @include span-columns(12);
+        }
+  }
+  .story2{
+    @extend %jesusbox;
+    @include span-columns(2.1);
+    @include media(max-width 700px) {
+       @include span-columns(12);
+    }
+  }
+  .story3{
+    @extend %jesusbox;
+    img {
+      width: 80%;
+      height: auto;
+    }
+    @include span-columns(4);
+    @include shift(2);
+    @include media(max-width 700px) {
+        @include span-columns(12);
+        @include shift(0);
+    }
+  }
+  .story4{
+    @extend %jesusbox;
+    @include span-columns(3);
+    @include media(max-width 700px) {
+       @include span-columns(12);
+    }
+  }
+  .story5{
+    @extend %jesusbox;
+    @include span-columns(3);
+    @include media(max-width 700px) {
+       @include span-columns(12);
+    }
+  }
+}
