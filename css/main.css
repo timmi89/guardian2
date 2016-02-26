@@ -4,18 +4,18 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
-.headLines .story1, .highLights .story1, .world .story1, .country .story1, .headLines .story2, .highLights .story2, .world .story2, .country .story2, .headLines .story3, .highLights .story3, .world .story3, .country .story3 {
+.headLines .story1, .highLight .story1, .world .story1, .country .story1, .headLines .story2, .highLight .story2, .world .story2, .country .story2, .headLines .story3, .highLight .story3, .world .story3, .country .story3 {
   padding: 10px;
   font-size: .8em;
   margin-top: 10px;
   overflow: hidden;
   background-color: #F5F5F5;
   border-top: 1px solid lightblue;
-  height: 300px; }
-  .headLines .story1:hover, .highLights .story1:hover, .world .story1:hover, .country .story1:hover, .headLines .story2:hover, .highLights .story2:hover, .world .story2:hover, .country .story2:hover, .headLines .story3:hover, .highLights .story3:hover, .world .story3:hover, .country .story3:hover {
+  height: 225px; }
+  .headLines .story1:hover, .highLight .story1:hover, .world .story1:hover, .country .story1:hover, .headLines .story2:hover, .highLight .story2:hover, .world .story2:hover, .country .story2:hover, .headLines .story3:hover, .highLight .story3:hover, .world .story3:hover, .country .story3:hover {
     background-color: gainsboro; }
 
-.headLines .story4, .headLines .story5, .headLines .story6, .headLines .story7, .highLights .story4, .highLights .story5, .highLights .story6, .highLights .story7, .world .story4, .world .story5, .world .story6, .world .story7, .country .story4, .country .story5, .country .story6, .country .story7 {
+.headLines .story4, .headLines .story5, .headLines .story6, .headLines .story7, .highLight .story4, .highLight .story5, .highLight .story6, .highLight .story7, .world .story4, .world .story5, .world .story6, .world .story7, .country .story4, .country .story5, .country .story6, .country .story7 {
   padding: 10px;
   font-size: .8em;
   margin-top: 10px;
@@ -23,7 +23,7 @@ html {
   background-color: #F5F5F5;
   border-top: 1px solid lightblue;
   height: 145px; }
-  .headLines .story4:hover, .headLines .story5:hover, .headLines .story6:hover, .headLines .story7:hover, .highLights .story4:hover, .highLights .story5:hover, .highLights .story6:hover, .highLights .story7:hover, .world .story4:hover, .world .story5:hover, .world .story6:hover, .world .story7:hover, .country .story4:hover, .country .story5:hover, .country .story6:hover, .country .story7:hover {
+  .headLines .story4:hover, .headLines .story5:hover, .headLines .story6:hover, .headLines .story7:hover, .highLight .story4:hover, .highLight .story5:hover, .highLight .story6:hover, .highLight .story7:hover, .world .story4:hover, .world .story5:hover, .world .story6:hover, .world .story7:hover, .country .story4:hover, .country .story5:hover, .country .story6:hover, .country .story7:hover {
     background-color: gainsboro; }
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
@@ -484,121 +484,181 @@ nav {
   height: 100px;
   padding-left: 10px; }
 
-.headLines, .highLights, .world, .country {
+.headLines, .highLight, .world, .country {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
   margin-right: 15px; }
-  .headLines::after, .highLights::after, .world::after, .country::after {
+  .headLines::after, .highLight::after, .world::after, .country::after {
     clear: both;
     content: "";
     display: table; }
-  .headLines h1, .highLights h1, .world h1, .country h1 {
+  .headLines h1, .highLight h1, .world h1, .country h1 {
     height: 600px;
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 14.70196%; }
-    .headLines h1:last-child, .highLights h1:last-child, .world h1:last-child, .country h1:last-child {
+    .headLines h1:last-child, .highLight h1:last-child, .world h1:last-child, .country h1:last-child {
       margin-right: 0; }
     @media screen and (max-width: 700px) {
-      .headLines h1, .highLights h1, .world h1, .country h1 {
+      .headLines h1, .highLight h1, .world h1, .country h1 {
         float: left;
         display: block;
         margin-right: 2.35765%;
         width: 100%; }
-        .headLines h1:last-child, .highLights h1:last-child, .world h1:last-child, .country h1:last-child {
+        .headLines h1:last-child, .highLight h1:last-child, .world h1:last-child, .country h1:last-child {
           margin-right: 0; } }
-  .headLines .story1, .highLights .story1, .world .story1, .country .story1 {
+  .headLines .story1, .highLight .story1, .world .story1, .country .story1 {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 57.35098%; }
-    .headLines .story1:last-child, .highLights .story1:last-child, .world .story1:last-child, .country .story1:last-child {
+    .headLines .story1:last-child, .highLight .story1:last-child, .world .story1:last-child, .country .story1:last-child {
       margin-right: 0; }
-    .headLines .story1 img, .highLights .story1 img, .world .story1 img, .country .story1 img {
+    .headLines .story1 img, .highLight .story1 img, .world .story1 img, .country .story1 img {
       float: right; }
     @media screen and (max-width: 700px) {
-      .headLines .story1, .highLights .story1, .world .story1, .country .story1 {
+      .headLines .story1, .highLight .story1, .world .story1, .country .story1 {
         float: left;
         display: block;
         margin-right: 2.35765%;
         width: 100%;
         height: 170px; }
-        .headLines .story1:last-child, .highLights .story1:last-child, .world .story1:last-child, .country .story1:last-child {
+        .headLines .story1:last-child, .highLight .story1:last-child, .world .story1:last-child, .country .story1:last-child {
           margin-right: 0; }
-        .headLines .story1 p, .highLights .story1 p, .world .story1 p, .country .story1 p {
+        .headLines .story1 p, .highLight .story1 p, .world .story1 p, .country .story1 p {
           float: left;
           display: block;
           margin-right: 2.35765%;
           width: 100%; }
-          .headLines .story1 p:last-child, .highLights .story1 p:last-child, .world .story1 p:last-child, .country .story1 p:last-child {
+          .headLines .story1 p:last-child, .highLight .story1 p:last-child, .world .story1 p:last-child, .country .story1 p:last-child {
             margin-right: 0; } }
-  .headLines .story2, .highLights .story2, .world .story2, .country .story2 {
+  .headLines .story2, .highLight .story2, .world .story2, .country .story2 {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 20.67282%; }
-    .headLines .story2:last-child, .highLights .story2:last-child, .world .story2:last-child, .country .story2:last-child {
+    .headLines .story2:last-child, .highLight .story2:last-child, .world .story2:last-child, .country .story2:last-child {
       margin-right: 0; }
     @media screen and (max-width: 700px) {
-      .headLines .story2, .highLights .story2, .world .story2, .country .story2 {
+      .headLines .story2, .highLight .story2, .world .story2, .country .story2 {
         height: 170px;
         float: left;
         display: block;
         margin-right: 2.35765%;
         width: 100%; }
-        .headLines .story2:last-child, .highLights .story2:last-child, .world .story2:last-child, .country .story2:last-child {
+        .headLines .story2:last-child, .highLight .story2:last-child, .world .story2:last-child, .country .story2:last-child {
           margin-right: 0; } }
-  .headLines .story3, .highLights .story3, .world .story3, .country .story3 {
+  .headLines .story3, .highLight .story3, .world .story3, .country .story3 {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 31.76157%; }
-    .headLines .story3 img, .highLights .story3 img, .world .story3 img, .country .story3 img {
+    .headLines .story3 img, .highLight .story3 img, .world .story3 img, .country .story3 img {
       width: 80%;
       height: auto; }
-    .headLines .story3:last-child, .highLights .story3:last-child, .world .story3:last-child, .country .story3:last-child {
+    .headLines .story3:last-child, .highLight .story3:last-child, .world .story3:last-child, .country .story3:last-child {
       margin-right: 0; }
     @media screen and (max-width: 700px) {
-      .headLines .story3, .highLights .story3, .world .story3, .country .story3 {
+      .headLines .story3, .highLight .story3, .world .story3, .country .story3 {
         height: 170px;
         float: left;
         display: block;
         margin-right: 2.35765%;
         width: 100%;
         margin-left: 0%; }
-        .headLines .story3:last-child, .highLights .story3:last-child, .world .story3:last-child, .country .story3:last-child {
+        .headLines .story3:last-child, .highLight .story3:last-child, .world .story3:last-child, .country .story3:last-child {
           margin-right: 0; }
-        .headLines .story3 img, .highLights .story3 img, .world .story3 img, .country .story3 img {
+        .headLines .story3 img, .highLight .story3 img, .world .story3 img, .country .story3 img {
           width: 40%;
           height: auto; } }
-  .headLines .story4, .headLines .story5, .headLines .story6, .headLines .story7, .highLights .story4, .highLights .story5, .highLights .story6, .highLights .story7, .world .story4, .world .story5, .world .story6, .world .story7, .country .story4, .country .story5, .country .story6, .country .story7 {
+  .headLines .story4, .headLines .story5, .headLines .story6, .headLines .story7, .highLight .story4, .highLight .story5, .highLight .story6, .highLight .story7, .world .story4, .world .story5, .world .story6, .world .story7, .country .story4, .country .story5, .country .story6, .country .story7 {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 21.95229%; }
-    .headLines .story4:last-child, .headLines .story5:last-child, .headLines .story6:last-child, .headLines .story7:last-child, .highLights .story4:last-child, .highLights .story5:last-child, .highLights .story6:last-child, .highLights .story7:last-child, .world .story4:last-child, .world .story5:last-child, .world .story6:last-child, .world .story7:last-child, .country .story4:last-child, .country .story5:last-child, .country .story6:last-child, .country .story7:last-child {
+    .headLines .story4:last-child, .headLines .story5:last-child, .headLines .story6:last-child, .headLines .story7:last-child, .highLight .story4:last-child, .highLight .story5:last-child, .highLight .story6:last-child, .highLight .story7:last-child, .world .story4:last-child, .world .story5:last-child, .world .story6:last-child, .world .story7:last-child, .country .story4:last-child, .country .story5:last-child, .country .story6:last-child, .country .story7:last-child {
       margin-right: 0; }
     @media screen and (max-width: 700px) {
-      .headLines .story4, .headLines .story5, .headLines .story6, .headLines .story7, .highLights .story4, .highLights .story5, .highLights .story6, .highLights .story7, .world .story4, .world .story5, .world .story6, .world .story7, .country .story4, .country .story5, .country .story6, .country .story7 {
+      .headLines .story4, .headLines .story5, .headLines .story6, .headLines .story7, .highLight .story4, .highLight .story5, .highLight .story6, .highLight .story7, .world .story4, .world .story5, .world .story6, .world .story7, .country .story4, .country .story5, .country .story6, .country .story7 {
         height: 170px;
         float: left;
         display: block;
         margin-right: 2.35765%;
         width: 100%; }
-        .headLines .story4:last-child, .headLines .story5:last-child, .headLines .story6:last-child, .headLines .story7:last-child, .highLights .story4:last-child, .highLights .story5:last-child, .highLights .story6:last-child, .highLights .story7:last-child, .world .story4:last-child, .world .story5:last-child, .world .story6:last-child, .world .story7:last-child, .country .story4:last-child, .country .story5:last-child, .country .story6:last-child, .country .story7:last-child {
+        .headLines .story4:last-child, .headLines .story5:last-child, .headLines .story6:last-child, .headLines .story7:last-child, .highLight .story4:last-child, .highLight .story5:last-child, .highLight .story6:last-child, .highLight .story7:last-child, .world .story4:last-child, .world .story5:last-child, .world .story6:last-child, .world .story7:last-child, .country .story4:last-child, .country .story5:last-child, .country .story6:last-child, .country .story7:last-child {
           margin-right: 0; } }
 
-.highLights .story4:nth-child(2), .highLights .story5:nth-child(2), .highLights .story6:nth-child(2), .highLights .story7:nth-child(2) {
-  margin-right: 0; }
-
-.highLights img, .story1 img {
+.highLight img, .story1 img {
   height: 80%;
   width: auto; }
 
+.highLight {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .highLight::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .highLight h1 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%;
+    color: red; }
+    .highLight h1:last-child {
+      margin-right: 0; }
+    .highLight h1 .row3 {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 82.94039%;
+      color: red; }
+      .highLight h1 .row3:last-child {
+        margin-right: 0; }
+      .highLight h1 .row3 .story4, .highLight h1 .row3 .story5, .highLight h1 .row3 .story6, .highLight h1 .row3 .story7 {
+        float: left;
+        display: block;
+        margin-right: 2.84259%;
+        width: 17.72593%;
+        color: red;
+        border: 1px solid red; }
+        .highLight h1 .row3 .story4:last-child, .highLight h1 .row3 .story5:last-child, .highLight h1 .row3 .story6:last-child, .highLight h1 .row3 .story7:last-child {
+          margin-right: 0; }
+      .highLight h1 .row3 .story3 {
+        float: left;
+        display: block;
+        margin-right: 2.84259%;
+        width: 48.57871%;
+        color: red; }
+        .highLight h1 .row3 .story3:last-child {
+          margin-right: 0; }
+    .highLight h1 .row4 {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 82.94039%; }
+      .highLight h1 .row4:last-child {
+        margin-right: 0; }
+      .highLight h1 .row4 .story1 {
+        float: left;
+        display: block;
+        margin-right: 2.84259%;
+        width: 38.29445%;
+        color: red; }
+        .highLight h1 .row4 .story1:last-child {
+          margin-right: 0; }
+      .highLight h1 .row4 .story2 {
+        float: left;
+        display: block;
+        margin-right: 2.84259%;
+        width: 28.01019%; }
+        .highLight h1 .row4 .story2:last-child {
+          margin-right: 0; }
+
 .country {
-  float: left;
   max-width: 68em;
   margin-left: auto;
   margin-right: auto; }
@@ -606,18 +666,15 @@ nav {
     clear: both;
     content: "";
     display: table; }
-  .country h1 {
+  .country .content {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 14.70196%;
-    color: red; }
-    .country h1:last-child {
+    width: 82.94039%; }
+    .country .content:last-child {
       margin-right: 0; }
   .country .row1 {
-    max-width: 68em;
-    margin-left: auto;
-    margin-right: auto; }
+    display: block; }
     .country .row1::after {
       clear: both;
       content: "";
@@ -626,7 +683,9 @@ nav {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 48.82117%; }
+      width: 74.41059%;
+      color: red;
+      overflow: hidden; }
       .country .row1 .story1:last-child {
         margin-right: 0; }
     .country .row1 .story2 {
@@ -637,25 +696,31 @@ nav {
       .country .row1 .story2:last-child {
         margin-right: 0; }
   .country .row2 {
-    max-width: 68em;
-    margin-left: auto;
-    margin-right: auto; }
+    display: block; }
+    .country .row2 .container-2 {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 23.23176%; }
+      .country .row2 .container-2:last-child {
+        margin-right: 0; }
     .country .row2::after {
       clear: both;
       content: "";
       display: table; }
     .country .row2 .story3 {
+      color: red;
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 23.23176%; }
+      width: 48.82117%; }
       .country .row2 .story3:last-child {
         margin-right: 0; }
     .country .row2 .story4, .country .row2 .story5, .country .row2 .story6, .country .row2 .story7 {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 10.43705%; }
+      width: 100%; }
       .country .row2 .story4:last-child, .country .row2 .story5:last-child, .country .row2 .story6:last-child, .country .row2 .story7:last-child {
         margin-right: 0; }
 

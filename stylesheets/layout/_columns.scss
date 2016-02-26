@@ -1,13 +1,10 @@
 
-// .jobs li a{
-//   text-align: right;
-// }
 nav {
   height: 100px;
   padding-left: 10px;
 }
 
-.headLines, .highLights, .world, .country {
+.headLines, .highLight, .world, .country {
   @include outer-container;
   margin-right: 15px;
 
@@ -34,7 +31,7 @@ nav {
         @include span-columns(12);
         }
       }
-  }
+   }
   .story2{
     @extend %jesusbox;
     @include span-columns(2.7);
@@ -73,47 +70,82 @@ nav {
   }
 }
 
-.highLights {
-  .story4, .story5, .story6, .story7  {
-    @include omega(2);
-  }
-}
-
-.highLights, .story1 {
+.highLight, .story1 {
   img {
     height: 80%;
     width: auto;
   }
 }
 
-
-.country {
-  float: left;
+.highLight {
   @include outer-container;
-  h1{
+  h1 {
     @include span-columns(2);
     color: red;
-  }
-
-  .row1 {
-
-    @include outer-container;
-    .story1{
-      @include span-columns(6);
+    .row3 {
+      @include span-columns(10);
+      color: red;
+      .story4,.story5, .story6, .story7 {
+      @include span-columns(2 of 10);
+      color: red;
+      border: 1px solid red;
+      }
+      .story3 {
+        @include span-columns(5 of 10);
+        color: red;
+      }
     }
-    .story2{
-      @include span-columns(3);
-    }
-  }
 
-  .row2 {
-
-    @include outer-container;
-    .story3{
-      @include span-columns(3);
-    }
-    .story4, .story5, .story6, .story7,{
-      @include span-columns(1.5);
+    .row4 {
+      @include span-columns(10);
+      .story1{
+      @include span-columns(4 of 10);
+      color: red;
+      }
+      .story2,{
+      @include span-columns(3 of 10);
+      }
     }
   }
 }
+
+.country {
+  @include outer-container;
+  .content {
+    //where the 2 from side column is added
+    @include span-columns(10);
+  }
+
+  .row1 {
+      // h1 {
+      //   color: red;
+      //   @include span-columns(2);
+      // @include span-columns(10);
+      @include row();
+
+    .story1{
+      @include span-columns(9);
+      color: red;
+       overflow: hidden;
+      }
+    .story2{
+
+        @include span-columns(3);
+      }
+    // }
+  }
+    .row2 {
+      .container-2 {
+        @include span-columns(3) ;
+      }
+      @include row();
+      .story3{
+        color: red;
+      @include span-columns(6);
+
+      }
+      .story4, .story5, .story6, .story7 {
+      @include span-columns(12);
+      }
+    }
+  }
